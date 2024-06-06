@@ -39,6 +39,8 @@ const userSchema = new mongoose.Schema({
     minlength: 6,
     required: [true, "Password should be require"],
   },
+},{
+  timestamps:true,
 });
 
 const User = mongoose.model("UserModelSchema", userSchema); /*Create Collection */
